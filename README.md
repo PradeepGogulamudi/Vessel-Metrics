@@ -1,5 +1,12 @@
 # Vessel Metrics Python Package
 This is Vessel Metrics Python package to collect Application/Micro-Service level Metrics and act as a scrape target for Prometheus to scrape for every pre-defined time interval.
+
+This repository contains a very fast and light Metrics Collection client for Vessel Services.
+
+Programming languages supported so far are:
+
+Python
+
 ## Pre-Requisites
 Python >= 3.x.
 
