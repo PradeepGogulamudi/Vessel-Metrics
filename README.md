@@ -5,7 +5,7 @@ This repository contains a very fast and light Metrics Collection client for Ves
 
 Programming languages supported so far are:
 
-Python
+-->Python
 
 ## Pre-Requisites
 Python >= 3.x.
