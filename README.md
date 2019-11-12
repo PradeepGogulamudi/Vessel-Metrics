@@ -15,9 +15,10 @@ pip install vslmetrics==0.0.2 -i https://artifactory-oh.pfizer.com/artifactory/a
 ```
 or
 
-## Bit Bucket Repo
 You can clone vessel-metrics from the following repository, i.e.
-
+```bash
+pip install git+http://bitbucket-insightsnow.pfizer.com:7990/scm/ga/vessel-metrics.git
+```
 
 After importing package to your micro-service, import classes and methods required to collect application metrics, e.g.
 Add the following lines of code to your mainfile.py
