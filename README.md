@@ -38,7 +38,7 @@ app_register(app)
 app.config['CORS_HEADERS']='content-Type'
 cors = CORS(app)
 
-cm = CounterMetric(metric_description= "hello", metric_name="test", metric_key_value= {"key1":"ad"}, svc_version="0.11", op_code="asd", app_id="add")
+cm = CounterMetric(metric_description= "Hello", metric_name="App_requests_count", metric_key_value= {"key1":"qw12er34ty56"}, svc_version="0.1", op_code="zxcv", app_id="1011")
 CM = cm.create_metric()
 ```
 Add the following code to each individual @app.route method
