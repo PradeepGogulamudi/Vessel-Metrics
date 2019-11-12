@@ -15,18 +15,19 @@ pip install vslmetrics==0.0.2 -i https://artifactory-oh.pfizer.com/artifactory/a
 ```
 or
 
-You can install vessel-metrics after cloning this repository, i.e.
-http://bitbucket-insightsnow.pfizer.com/scm/ga/vessel-metrics.git
-or using vessel-metrics docker image
+## Bit Bucket Repo
+You can clone vessel-metrics from the following repository, i.e.
 
-After Cloning/Installing or adding image to your micro-service, import classes and methods required to collect application metrics, e.g.
+
+After importing package to your micro-service, import classes and methods required to collect application metrics, e.g.
+Add the following lines of code to your mainfile.py
 ```python
 from vslmetrics.metrics import setup_metrics
 from vslmetrics.counter import CounterMetric
 from vslmetrics.register import app_register
 from vslmetrics.guage import GuageMetric
 ```
-Add the following lines of code to your app.py
+
 ```python
 app = Flask(__name__)
 setup_metrics(app)
@@ -38,7 +39,7 @@ cors = CORS(app)
 cm = CounterMetric(metric_description= "hello", metric_name="test", metric_key_value= {"key1":"ad"}, svc_version="0.11", op_code="asd", app_id="add")
 CM = cm.create_metric()
 ```
-Add the following code to each individual @app.route
+Add the following code to each individual @app.route method
 ```python
 try:
 	      CM.labels(svc_version="0.11", op_code="asd", app_id="add", key1 = "dad").inc()
