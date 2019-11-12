@@ -28,7 +28,7 @@ from vslmetrics.counter import CounterMetric
 from vslmetrics.register import app_register
 from vslmetrics.guage import GuageMetric
 ```
-Add the following lines of code to your mainfile.py
+Add the following lines of code to your 'mainfile.py'
 
 ```python
 app = Flask(__name__)
@@ -41,7 +41,7 @@ cors = CORS(app)
 cm = CounterMetric(metric_description= "Hello", metric_name="App_requests_count", metric_key_value= {"key1":"qw12er34ty56"}, svc_version="0.1", op_code="zxcv", app_id="1011")
 CM = cm.create_metric()
 ```
-Add the following code to each individual @app.route method
+Add the following code to each individual '@app.route' method
 ```python
 try:
         CM.labels(svc_version="0.11", op_code="asd", app_id="add", key1 = "dad").inc()
