@@ -7,17 +7,14 @@ Programming languages supported so far are:
 
 -->Python
 
-## Pre-Requisites
-Python >= 3.x.
-
-Pip (latest)
-
-Prometheus-Client
+## Vessel Metrics Python Package
+You can download the Vessel Metrics library as Python Package from Pfizer Artifactory, i.e.
 
 ```bash
-pip install prometheus_client
+pip install vslmetrics==0.0.2 -i https://artifactory-oh.pfizer.com/artifactory/api/pypi/vessel-py-dev-local/simple
 ```
-## Vessel-Metrics Docker Image
+or
+
 You can install vessel-metrics after cloning this repository, i.e.
 http://bitbucket-insightsnow.pfizer.com/scm/ga/vessel-metrics.git
 or using vessel-metrics docker image
