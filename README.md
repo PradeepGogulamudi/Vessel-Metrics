@@ -44,6 +44,9 @@ CM = cm.create_metric()
 Add the following code to each individual @app.route method
 ```python
 try:
-	      CM.labels(svc_version="0.11", op_code="asd", app_id="add", key1 = "dad").inc()
+        CM.labels(svc_version="0.11", op_code="asd", app_id="add", key1 = "dad").inc()
+    except Exception as err:
+        raise Exception("Error: Failed to get Counter Metric for test1 path." +
+            type(err).__name__ + ". Args:" + str(err.args))
 ```
 
