@@ -7,7 +7,7 @@ Programming languages supported so far are:
 
 -->Python
 
-## Steps to setup your microservice as a target for Scraping Application Metrics
+## Steps to setup microservice as a target for Scraping Application Metrics
 You can download the Vessel Metrics library as Python Package from Pfizer Artifactory, i.e.
 
 ```bash
