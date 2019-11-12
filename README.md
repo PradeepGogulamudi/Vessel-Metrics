@@ -50,6 +50,6 @@ try:
             type(err).__name__ + ". Args:" + str(err.args))
 ```
 
-## Track the application metrics at the published End-Point
+## Track the Application Metrics at the published End-Point
 
-Once the code changes have been commited, You can track your application Metrics at '' 'host_url'/metrics''
+Once the code changes have been commited, You can track the application Metrics at '' 'host_url'/metrics''.
