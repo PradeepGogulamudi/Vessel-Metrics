@@ -45,7 +45,5 @@ Add the following code to each individual @app.route method
 ```python
 try:
 	      CM.labels(svc_version="0.11", op_code="asd", app_id="add", key1 = "dad").inc()
-	except Exception as e:
-	    print("Failed to get Counter metric for test1 path. Error: %s" %e)
 ```
 
