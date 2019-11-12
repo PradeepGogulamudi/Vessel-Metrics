@@ -20,7 +20,7 @@ You can clone vessel-metrics from the following repository, i.e.
 pip install git+http://bitbucket-insightsnow.pfizer.com:7990/scm/ga/vessel-metrics.git
 ```
 
-After installing package, import classes and methods to your microservice required to collect application metrics, e.g.
+After installing package, import required classes and methods to your microservice to collect application metrics, e.g.
 
 ```python
 from vslmetrics.metrics import setup_metrics
